@@ -7,6 +7,9 @@ $VIDEO_POSTER_Z_INDEX: 5;
 .video_container, .yc-video-container {
   max-width: 854px;
   margin: 16px auto;
+  // bug_4342 - attempt to allow touch scrolling on video containers.
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
   .wrap {
     position: relative;
     padding: 0 0 56.21% 0; /* 16:9 */
